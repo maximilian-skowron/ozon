@@ -1,1 +1,1 @@
-# ozon-core
+# ozon
