@@ -4,13 +4,18 @@ package ozon
 
 import (
 	"github.com/Ozon-Project/ozon/cmd/credential"
+	"github.com/Ozon-Project/ozon/cmd/version"
 	"github.com/spf13/cobra"
 )
 
 var rootCmd = &cobra.Command{
 	Use:   "ozon",
-	Short: "Ozon short",
-	Long:  `Ozon long`,
+	Short: "Ozon will generate multiple projects across your variouse softwares.",
+	Long: `Ozon will generate multiple projects across your variouse softwares.
+It will utilize your confiugred credentials.
+			
+To get startet create credentials for supportet platforms with:
+	ozon cred ...`,
 }
 
 // Executes executes the root cobra command ozon
@@ -20,4 +25,5 @@ func Execute() error {
 
 func init() {
 	rootCmd.AddCommand(credential.CredentialCmd)
+	rootCmd.AddCommand(version.VersionCmd)
 }
