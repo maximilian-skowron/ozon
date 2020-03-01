@@ -1,8 +1,8 @@
 package main
 
 import (
-	"os"
 	"github.com/Ozon-Project/ozon/cmd/ozon"
+	"os"
 )
 
 func main() {

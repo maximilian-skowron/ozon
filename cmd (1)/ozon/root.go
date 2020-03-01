@@ -2,15 +2,15 @@
 // root command for the cobra cli
 package ozon
 
-import( 
-	"github.com/spf13/cobra"
+import (
 	"github.com/Ozon-Project/ozon/cmd/credential"
+	"github.com/spf13/cobra"
 )
 
 var rootCmd = &cobra.Command{
-	Use: "ozon",
+	Use:   "ozon",
 	Short: "Ozon short",
-	Long: `Ozon long`,
+	Long:  `Ozon long`,
 }
 
 // Executes executes the root cobra command ozon
