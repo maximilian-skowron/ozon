@@ -1,5 +1,4 @@
-// Package version
-// handler for all version terms
+// Package version handler for all version terms
 package version
 
 import (
@@ -8,6 +7,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
+// VersionCmd provides the command to show the current version
 var VersionCmd = &cobra.Command{
 	Use:   "version",
 	Short: "Shows the version of ozon.",
